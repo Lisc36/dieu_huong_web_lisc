@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Điều Hướng</title>
+    <style>
+        /* Đặt lại lề và cài đặt font chữ cơ bản */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0; 
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Hộp chứa nội dung trung tâm */
+        .nav-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 450px;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .nav-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            object-fit: cover;
+            border: 3px solid #007bff;
+        }
+
+        .nav-container h1 {
+            color: #333333;
+            font-size: 24px;
+            margin-bottom: 8px;
+        }
+
+        .nav-container p {
+            color: #666666;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* Nút liên kết */
+        .nav-link {
+            display: block;
+            width: 100%;
+            padding: 16px;
+            margin-bottom: 15px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Biến thể màu sắc cho các nút khác nhau */
+        .btn-success {
+            background-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: #333333;
+            border: 2px solid #e0e0e0;
+        }
+        .btn-outline:hover {
+            background-color: #f8f9fa;
+            border-color: #d0d0d0;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        /* Responsive cho màn hình nhỏ */
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 30px 20px;
+                margin: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-container">
+        <!-- Thay link ảnh này bằng logo hoặc avatar của bạn -->
+        <img src="https://via.placeholder.com/80" alt="Logo">
+        
+        <h1>Cổng Thông Tin</h1>
+        <p>Vui lòng chọn điểm đến của bạn để tiếp tục</p>
+
+        <!-- Thay thế '#' bằng các đường link thực tế -->
+        <a href="https://courses.uit.edu.vn/admin/tool/dataprivacy/summary.php" class="nav-link">Course</a>
+        <a href="https://portal.uit.edu.vn/trang-chu" class="nav-link btn-success">Portal</a>
+        <a href="https://forum.uit.edu.vn/" class="nav-link">Forum</a>
+        <a href="#" class="nav-link btn-outline">📞 Liên Hệ Hỗ Trợ</a>
+    </div>
+
+</body>
+</html>
